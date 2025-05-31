@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="keywords" content="Aetherium, pvp client 1.8.9, cracked pvp client, Aetherium client, PVP">
+    <meta name="description" content="Introducing Aetherium, the pinnacle of modern Minecraft clients with a seamless blend of cutting-edge features and cherished legacy elements.">
+    <meta name="robots" content="index, follow">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <title>Aetherium Client</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="/img/logo.png">
+    <meta content="#ffffff" data-react-helmet="true" name="theme-color">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+  <div class="intro" id="introloading">
+    <img data-aos="zoom-in" src="img/logo.png" alt="logo">
+    <div data-aos="zoom-in" class="lds-dual-ring"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(() => {
+          document.getElementById('introloading').classList.add('loaded')
+        }, 1100);
+        
+        setTimeout(() => {
+          document.getElementById('introloading').style.display = 'none'
+        }, 2000);
+        
+});
+    </script>
+  </div>
+    <div class="navbar">
+      <div onclick="location.href = './'" class="brand">
+        <img src="./img/logo.png" alt="logo">
+        <div class="brandname">Aetherium</div>
+      </div>
+      <div class="right">
+        <div onclick="location.href = '#home'" class="hide navelem">
+          Home
+        </div>
+        <div onclick="location.href = '#features'" class="navelem">
+          Features
+        </div>
+        <div onclick="location.href = '#video'" class="navelem">
+          Media
+        </div>
+        <div onclick="location.href = '#faq'" class="navelem">
+          FAQ
+        </div>
+        <div onclick="window.open('https://github.com/Aetherium-Development/autoupdate/releases/latest/download/AetheriumClient.exe')" class="dl navelem">
+          Download
+        </div>
+      </div>
+    </div>
+    <div class="home" id="home">
+        <h1>Aetherium</h1>
+        <h5>Introducing Aetherium, the pinnacle of modern Minecraft clients with a seamless blend of cutting-edge features and cherished legacy elements.</h5>
+        <div class="buttons">
+          <button onclick="window.open('https://github.com/Aetherium-Development/autoupdate/releases/latest/download/AetheriumClient.exe')" class="dl">Download</button>
+          <button onclick="window.open('https://discord.com/invite/JUDvJc6X5B')" class="ds">Discord</button>
+        </div>
+    </div>
+    <div class="section" id="features">
+      <h3 data-aos="zoom-in">Features</h3>
+      <div class="cards" id="cards" data-aos="fade-up">
+        <div class="card">
+          <div id="card" class="imgcontainer">
+            <img data-original="img/launcher.png" src="img/launcher.png">
+          </div>
+          <div class="cardtext">Customizable and Modern launcher</div>
+        </div>
+        <div class="card">
+          <div id="card" class="imgcontainer">
+            <img data-original="img/legacy.png" src="img/legacy.png">
+          </div>
+          <div class="cardtext">Legacy theme</div>
+        </div>
+        <div id="card" class="card">
+          <div class="imgcontainer">
+            <img data-original="img/modern.png" src="img/modern.png">
+          </div>
+          <div class="cardtext">Modern theme</div>
+        </div>
+        <div class="card">
+          <div class="imgcontainer center">
+            <img data-original="img/crossair.png" src="img/crossair.png">
+          </div>
+          <div class="cardtext">Crossair Editor</div>
+        </div>
+        <button id="next"><i class='bx bx-right-arrow-alt'></i></button>
+            <button id="prev"><i class='bx bx-left-arrow-alt'></i></button>
+      </div>
+    </div>
+    <div data-aos="zoom-in" class="section" id="video">
+      <h3 data-aos="zoom-in">Media</h3>
+      <div class="videos">
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/DevZI36JtAw?si=G_UGDV98HDeZkvYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>Unable to load the video</iframe>
+      <iframe width="500" height="300" src="https://www.youtube.com/embed/r0-yKU6zUio?si=4Ojvb8NvFYVFzqOW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>Unable to load the video</iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ogaQ3u2tOZU?si=ZtE5BNA7cyfa9s12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>  
+      
+    </div>
+    <div data-aos="zoom-in" class="section" id="faq">
+      <h3 data-aos="zoom-in">FAQ</h3>
+      <div class="accordion-container">
+        <div class="accordion-item">
+          <button class="accordion-header">
+             Is Aetherium Client free ? <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+              <p>Yes! Aetherium Client is entirely free to download and use. There are cosmetic items available for purchase, however, no gameplay feature is limited or hidden behind a paywall.</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+           Does Aetherium Client boost fps ? <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+            <p>Yes! In most cases with optimal settings Aetherium Client will double your frames per second compared to vanilla Minecraft!</p>
+        </div>
+    </div>
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Which versions are supported ? <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+                <p>Aetherium Client currently only support 1.8.9.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Can I add my own mods ? <span class="icon">+</span>
+            </button>
+            <div class="accordion-content">
+                <p>Yes! Since Aetherium Client use LegacyFabric as a mod loader. You can find all the mods available <a href="https://legacyfabric.net/mods.html">here.</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+      <p class="left">&copy; Copyright 2022-2023 Aetherium</p>
+      <div class="socials">
+        <i onclick="window.open('https://www.youtube.com/@aetheriumclient')" class="bx bxl-youtube"></i>
+        <i onclick="window.open('https://github.com/Aetherium-Development')" class="bx bxl-github"></i>
+      </div>
+      <p class="right">Website made by <a target="_blank" href="https://discord.com/users/1001220536619249665">aldesssc</a></p>
+  </footer>
+  <div class="shapes">
+    <div class="shape color1"></div>
+    <div class="shape color2"></div>
+    <div class="shape color3"></div>
+  </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var galley = document.getElementById('cards');
+      var viewer = new Viewer(galley, {
+        url: 'data-original',
+        title: function (image) {
+          return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
+        },
+      });
+    });
+    AOS.init();
+  </script>
+  <script src="js/slider.js"></script>
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(button => {
+button.addEventListener('click', () => {
+const accordionContent = button.nextElementSibling;
+
+button.classList.toggle('active');
+
+if (button.classList.contains('active')) {
+    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+} else {
+    accordionContent.style.maxHeight = 0;
+}
+
+// Close other open accordion items
+document.querySelectorAll('.accordion-header').forEach(otherButton => {
+    if (otherButton !== button) {
+        otherButton.classList.remove('active');
+        otherButton.nextElementSibling.style.maxHeight = 0;
+    }
+});
+});
+});
+
+  </script>
+</body>
+</html>

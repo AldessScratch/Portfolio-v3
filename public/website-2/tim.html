@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AldessSc | Things I made</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./img/logo.png">
+  <meta name="description" content="My website :D">
+  <meta property="og:image" content="/img/logo.png">
+  <meta content="#ffffff" data-react-helmet="true" name="theme-color">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.css">
+</head> 
+<body style="background-image: url('./img/background.png')">
+  <style>
+    body {
+      height: unset;
+      min-height: 100vh;
+    }
+  </style>
+    <div class="home2"  >
+      
+        <div class="cards" id="cards">
+          <button class="homeback" onclick="location.href = './index.html'">Home <i class="bx bx-home"></i></button>
+          <div class="card">
+            <div class="imgcontainer">
+              <img data-original="img/liteclient.png" src="img/liteclient.png">
+              <img style="display: none;" data-original="img/liteclient2.png" src="img/liteclient2.png">
+              <img style="display: none;" data-original="img/liteclient3.png" src="img/liteclient3.png">
+              <img style="display: none;" data-original="img/liteclient4.png" src="img/liteclient4.png">
+              <img style="display: none;" data-original="img/liteclient5.png" src="img/liteclient5.png">
+            </div>
+            <div class="cardtext">Lite Client Website</div>
+            <div class="carddesc">Cleanest website I've ever made (so far) for a Minecraft Client that never came out too</div>
+          </div>
+          <div class="card">
+            <div class="imgcontainer">
+              <img data-original="img/comet.png" src="img/comet.png">
+            </div>
+            <div class="cardtext">Comet Client Website <i onclick="window.open('https://cometclient.dev/')" class="bx bx-link-external small"></i></div>
+            <div class="carddesc">Clean website i made for a Minecraft Client that never came out</div>
+          </div>
+          <div class="card">
+            <div class="imgcontainer">
+              <img data-original="img/launcher.png" src="img/launcher.png">
+              <img style="display: none;" data-original="img/launcher2.png" src="img/launcher2.png">
+              <img style="display: none;" data-original="img/launcher3.png" src="img/launcher3.png">
+            </div>
+            <div class="cardtext">Aetherium Launcher</div>
+            <div class="carddesc">Very Clean frontend for Aetherium Client Launcher.</div>
+          </div>
+            <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/aetherium.png" src="img/aetherium.png">
+                  <img style="display: none;" data-original="img/aetherium2.png" src="img/aetherium2.png">
+                  <img style="display: none;" data-original="img/aetherium3.png" src="img/aetherium3.png">
+                </div>
+                <div class="cardtext">Aetherium Client Website <i onclick="window.open('https://aetherium.club/')" class="bx bx-link-external small"></i></div>
+                <div class="carddesc">Very nice and modern website i made for a Minecraft Client</div>
+              </div>
+              <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/snowybg.png" src="img/snowybg.png">
+                </div>
+                <div class="cardtext">Snowybg</div>
+                <div class="carddesc">Website to use with Lively Wallpaper so we can have a nice background on the classroom's computer.</div>
+              </div>
+              <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/unisteria.png" src="img/unisteria.png">
+                  <img style="display: none;" data-original="img/unisteria2.png" src="img/unisteria2.png">
+                </div>
+                <div class="cardtext">Unisteria Client Website <i onclick="window.open('https://github.com/AldessScratch/Unisteria-Website')" class="bx bxl-github"></i></div>
+                <div class="carddesc">A website I made for a hack client.</div>
+              </div>
+              <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/soar.png" src="img/soar.png">
+                  <img style="display: none;" data-original="img/soar2.png" src="img/soar2.png">
+                </div>
+                <div class="cardtext">Soar Client website redesign <i onclick="window.open('https://soarclient.netlify.app/')" class="bx bx-link-external small"></i> <i onclick="window.open('https://github.com/AldessScratch/Soar-Client-Website')" class="bx bxl-github"></i></div>
+                <div class="carddesc">A redesign of Soar Client bc the actual one is made on NicePage :/</div>
+              </div>
+              <div class="card">
+                <div class="imgcontainer">
+                  <img data-original="img/fluix2.png" src="img/fluix2.png">
+                  <img style="display: none;" data-original="img/fluix.png" src="img/fluix.png">
+                </div>
+                <div class="cardtext">Fluix</div>
+                <div class="carddesc">Website I made to bypass restrictions on school Ipad</div>
+              </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+          var galley = document.getElementById('cards');
+          var viewer = new Viewer(galley, {
+            url: 'data-original',
+            title: function (image) {
+              return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
+            },
+          });
+        });
+        AOS.init();
+      </script>
+</body>
+</html>
