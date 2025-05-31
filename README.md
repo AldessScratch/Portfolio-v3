@@ -1,12 +1,10 @@
 # V3 of my Portfolio
 
-Link: https://aldess.vercel.app/
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Preview
 
 ![Portfolio preview image](https://raw.githubusercontent.com/AldessScratch/Portfolio-v3/refs/heads/main/public/Website-v3/portfolio.png)
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
