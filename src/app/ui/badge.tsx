@@ -71,7 +71,7 @@ export default function Badge({ badge, link }: BadgeProps) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="badge badge-neutral badge-outline m-1 rounded-full cursor-pointer hover:invert bg-white dark:invert dark:hover:invert-0"
+      className="badge badge-neutral badge-outline m-1 rounded-full cursor-pointer hover:invert hover:bg-white dark:invert dark:hover:invert-0"
     >
       {content}
     </a>

@@ -2,6 +2,7 @@ import { ThemeProvider } from 'next-themes';
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import Script from 'next/script';
 
 const outfit = Outfit({
   weight: ['400', '500', '600', '700'],
@@ -19,6 +20,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
           {children}
+          <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+        />
        </ThemeProvider>
       </body>
     </html>
