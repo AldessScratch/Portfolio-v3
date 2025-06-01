@@ -40,7 +40,7 @@ export default function ProjectCard(props: ProjectCardProps) {
       : [];
 
     return(
-            <div ref={galleryRef} className="card rounded-2xl dark:border-1 backdrop-blur-lg shadow-lg text-black bg-transparent dark:text-white dark:border-gray-700 h-[380px]">
+            <div ref={galleryRef} className="card rounded-2xl border-1 backdrop-blur-lg shadow-lg text-black bg-transparent dark:text-white dark:border-gray-700 border-transparent h-[380px]">
                 <figure className="relative w-full h-[150px] min-h-[150px] overflow-hidden shadow-sm">
                 {images.map((img, idx) => (
                   <Image
