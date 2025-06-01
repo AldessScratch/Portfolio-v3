@@ -19,7 +19,7 @@ export default function ThemeToggle() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <label className="swap swap-rotate btn btn-ghost btn-circle h-6 w-6">
+    <label className="swap swap-rotate btn btn-ghost btn-circle h-7 w-7 m-1">
       {/* this hidden checkbox controls the state */}
       <input 
       type="checkbox" 
@@ -29,8 +29,8 @@ export default function ThemeToggle() {
       onChange={() => setTheme(currentTheme === "dark" ? "light" : "dark")} />
 
       {/* sun icon */}
-      <IconSun className='swap-off h-4 w-4' />
-      <IconMoon className='swap-on h-4 w-4' />
+      <IconSun className='swap-off h-5 w-5' />
+      <IconMoon className='swap-on h-5 w-5' />
     </label>
     
     

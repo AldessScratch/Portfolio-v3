@@ -50,6 +50,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                     fill
                     className={`object-cover w-full min-h-[150px] ${idx !== 0 ? 'hidden' : ''}`}
                     sizes="(max-width: 768px) 100vw, 400px"
+                    priority={false}
                   />
                 ))}
               </figure>

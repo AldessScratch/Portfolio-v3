@@ -52,7 +52,7 @@ export default function Home() {
             },
             {
               title: "Lite Client Website",
-              description: "Another modern landing page for a Minecraft Client called Lite that never came out",
+              description: "Modern landing page for a Minecraft Client that never came out",
               images: ["/liteclient/liteclient.png", "/liteclient/liteclient2.png", "/liteclient/liteclient3.png", "/liteclient/liteclient4.png", "/liteclient/liteclient5.png"],
               link: "/liteclient/index.html",
               badges: ["html", "css", "js"]
@@ -81,7 +81,7 @@ export default function Home() {
               title: "Portfolio v1",
               description: "My first portfolio",
               images: ["/website/portfolio.png"],
-              link: "/website/index.html",
+              link: "https://aldessscratch.github.io/website",
               badges: ["html", "css"],
               github: "https://github.com/AldessScratch/website"
             },
@@ -95,7 +95,7 @@ export default function Home() {
             },
             {
               title: "GetTechno / Fluix",
-              description: "One of the first website I made. Made to bypass restrictions on school Ipad. Frontend for Ultraviolet Proxy.",
+              description: "Website with games and frontend for Ultraviolet Proxy, first website that I made.",
               images: ["/fluix/fluix2.png", "/fluix/fluix.png", "/fluix/gettechno.png"],
               badges: ["html", "css", "js"]
             }
@@ -103,7 +103,6 @@ export default function Home() {
             />
           </div>
         </div>
-        
         <div className="w-full flex justify-center items-center h-28 text-gray-600 dark:text-gray-400">
           &copy; 2025 @ aldesssc. All rights reserved.
         </div>
