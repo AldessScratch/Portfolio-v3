@@ -24,6 +24,7 @@ export default function Home() {
             <div className="w-full grid grid-cols-1 gap-2 lg:grid-cols-1">
               <ImageCard title="Low Poly BMW M4" description="A low poly car that I made in Blender" imageUrl="/bmw.png" imageAlt="BMW M4 Car done in Blender" />
             </div>
+            <SkillCard />
             <ProjectCardSection 
             projects={[
             {
@@ -100,7 +101,6 @@ export default function Home() {
             }
           ]}
             />
-            <SkillCard />
           </div>
         </div>
         
