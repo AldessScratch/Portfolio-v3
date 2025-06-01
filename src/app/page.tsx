@@ -46,7 +46,7 @@ export default function Home() {
               title: "Portfolio v2",
               description: "Modern portfolio which was my first time with Tailwind CSS",
               images: ["/website-2/portfolio.png"],
-              link: "/website-2/index.html",
+              link: "https://aldessscratch.github.io/website-2/",
               badges: ["html", "tailwind"],
               github: "https://github.com/AldessScratch/website-2"
             },
