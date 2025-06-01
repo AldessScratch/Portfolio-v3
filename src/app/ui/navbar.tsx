@@ -54,7 +54,7 @@ useEffect(() => {
             <li key={section.id}>
               <a
                 href={`#${section.id}`}
-                className={`rounded-full ${activeSection === section.id ? 'dark:text-blue-500' : ''}`}
+                className={`rounded-full ${activeSection === section.id ? 'text-blue-500' : ''}`}
               >
                 {section.label}
               </a>
