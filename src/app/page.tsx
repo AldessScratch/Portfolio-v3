@@ -12,15 +12,15 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 px-6 lg:mt-0 lg:px-0 z-10" id='home'>
         <div className="flex flex-col justify-center lg:flex-row gap-8">
-          <div className="lg:w-1/4 w-full lg:mb-10 left-0 h-fit lg:sticky lg:top-[20vh]">
+          <div className="lg:w-1/4 w-full lg:mb-10 left-0 h-fit lg:sticky lg:top-28">
             <ProfileCard 
-            description="Hey, it's me Aldess :D, I'm a french teenager and I love coding, drawing, 3D modelling and making videos. Currently learning Next.js"
+            description="Hello, I'm aldess, a french teenager with passion for technology and coding. I started learning web development to make a website to access restricted websites on the school tablet. Since then, I've learnt a lot and made a lot of websites. I'm now learning frameworks such as Next.js which this website is made with to create bigger projects."
             badges={[
               { badge: "github", link: "https://github.com/AldessScratch" },
               { badge: "discord", link: "https://discord.com/users/1001220536619249665" }
             ]}/>
           </div>
-          <div className="xl:w-2/4 lg:mt-[20vh] lg:w-2/3 w-full">
+          <div className="xl:w-2/4 lg:mt-28 lg:w-2/3 w-full">
             <div className="w-full grid grid-cols-1 gap-2 lg:grid-cols-1">
               <ImageCard title="Low Poly BMW M4" description="A low poly car that I made in Blender" imageUrl="/bmw.png" imageAlt="BMW M4 Car done in Blender" />
             </div>
