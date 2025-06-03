@@ -71,12 +71,12 @@ export default function Badge({ badge, link }: BadgeProps) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="badge badge-neutral badge-outline m-1 rounded-full cursor-pointer hover:invert hover:bg-white dark:invert dark:hover:invert-0"
+      className="badge badge-neutral badge-outline m-1 rounded-full cursor-pointer hover:invert hover:bg-white dark:invert dark:hover:invert-0 transition-all duration-300"
     >
       {content}
     </a>
   ) : (
-    <div className="badge badge-neutral badge-outline m-1 rounded-full dark:invert">
+    <div className="badge badge-neutral badge-outline m-1 rounded-full hover:invert hover:bg-white dark:invert dark:hover:invert-0 transition-all duration-300">
       {content}
     </div>
   );

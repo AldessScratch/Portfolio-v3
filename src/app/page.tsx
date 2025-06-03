@@ -1,10 +1,10 @@
 'use client'
 
-import Navbar from './ui/navbar';
-import ProfileCard from './ui/profilecard';
-import ImageCard from './ui/imagecard';
-import ProjectCardSection from './ui/projectcardsection';
-import SkillCard from './ui/skillcard';
+import Navbar from '@/components/navbar';
+import ProfileCard from '@/components/profilecard';
+import ImageCard from '@/components/imagecard';
+import ProjectCardSection from '@/components/projectcardsection';
+import SkillCard from '@/components/skillcard';
 
 export default function Home() {
   return (
@@ -22,7 +22,13 @@ export default function Home() {
           </div>
           <div className="xl:w-2/4 lg:mt-28 lg:w-2/3 w-full">
             <div className="w-full grid grid-cols-1 gap-2 lg:grid-cols-1">
-              <ImageCard title="Low Poly BMW M4" description="A low poly car that I made in Blender" imageUrl="/bmw.png" imageAlt="BMW M4 Car done in Blender" />
+              <ImageCard title="Low Poly BMW M4" 
+              description="A low poly car that I made in Blender" 
+              images={[
+                { url: "/bmw.png", alt: "BMW Car back" },
+                { url: "/bmwfront.png", alt: "BMW Car front" },
+                { url: "/blenderbmw.png", alt: "BMW Car in Blender" }
+              ]}/>
             </div>
             <SkillCard />
             <ProjectCardSection 
