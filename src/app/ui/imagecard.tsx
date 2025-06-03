@@ -33,6 +33,7 @@ export default function ImageCard(props: ImageCardProps) {
                   fill
                   className="rounded-2xl object-cover"
                   sizes="(max-width: 1000px) 100vw, 400px"
+                  priority={true}
               />
           </figure>
             <div className="card-body absolute bottom-0 p-10">

@@ -21,8 +21,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
           {children}
           <Script
+          async
           defer
-          src={process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL}
+          src="/stats/script.js"
           data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
         />
        </ThemeProvider>
