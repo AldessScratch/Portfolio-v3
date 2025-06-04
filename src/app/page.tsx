@@ -1,118 +1,118 @@
 'use client'
 
+import { useEffect, useState } from 'react';
 import Navbar from '@/components/navbar';
 import ProfileCard from '@/components/profilecard';
 import ImageCard from '@/components/imagecard';
 import ProjectCardSection from '@/components/projectcardsection';
 import SkillCard from '@/components/skillcard';
 
-export default function Home() {
+function Skeleton({ visible }: { visible: boolean }) {
   return (
-    <div className="min-h-screen flex justify-center items-center flex-col bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-800 ease-in-out">
-      <Navbar />
+    <div
+      className={`
+        w-full min-h-screen flex justify-center items-center flex-col
+        transition-opacity duration-700
+        ${visible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
+      `}
+    >
       <div className="container mt-24 px-6 lg:mt-0 lg:px-0 z-10" id='home'>
         <div className="flex flex-col justify-center lg:flex-row gap-8">
           <div className="lg:w-1/4 w-full lg:mb-10 left-0 h-fit lg:sticky lg:top-28">
-            <ProfileCard 
-            description="Hello, I'm aldess, a french teenager with passion for technology and coding. I started learning web development to make a website to access restricted websites on the school tablet. Since then, I've learnt a lot and made a lot of websites. I'm now learning frameworks such as Next.js which this website is made with to create bigger projects."
-            badges={[
-              { badge: "github", link: "https://github.com/AldessScratch" },
-              { badge: "discord", link: "https://discord.com/users/1001220536619249665" }
-            ]}/>
-          </div>
-          <div className="xl:w-2/4 lg:mt-28 lg:w-2/3 w-full">
-            <div className="w-full grid grid-cols-1 gap-2 lg:grid-cols-1">
-              <ImageCard title="Low Poly BMW M4" 
-              description="A low poly car that I made in Blender" 
-              images={[
-                { url: "/bmw.png", alt: "BMW Car back" },
-                { url: "/bmwfront.png", alt: "BMW Car front" },
-                { url: "/blenderbmw.png", alt: "BMW Car in Blender" }
-              ]}/>
+            <div className="rounded-2xl blbg p-6 animate-pulse flex justify-center items-center flex-col">
+              <div className="w-25 px-10 pt-10 m-4 h-25 bg-gray-300 dark:bg-gray-700 rounded-full"></div>
+              <div className="h-6 bg-gray-300 dark:bg-gray-700 rounded w-1/2 mb-4"></div>
+              <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded w-3/4 mb-2"></div>
+              <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded w-3/4 my-0.5"></div>
+              <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded w-3/4 my-0.5"></div>
+              <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded w-3/4 my-0.5"></div>
+              <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded w-3/4 my-0.5"></div>
             </div>
-            <SkillCard />
-            <ProjectCardSection 
-            projects={[
-            {
-              title: "Current Portfolio",
-              description: "Modern portflio website made with Next.js",
-              images: ["/Website-v3/portfolio.png"],
-              badges: ["next", "react", "tailwind"],
-              github: "https://github.com/AldessScratch/Website-v3"
-            },
-            {
-              title: "Flace",
-              description: "A website I made with a friend to learn with flashcards",
-              images: ["/Flace/flacehome.png", "/Flace/flacecards.png", "/Flace/flacelist.png", "/Flace/flace4.png"],
-              link: "https://flace.netlify.app",
-              badges: ["html", "css", "js"],
-              github: "https://github.com/AldessScratch/Flace"
-            },
-            {
-              title: "Portfolio v2",
-              description: "Modern portfolio which was my first time with Tailwind CSS",
-              images: ["/website-2/portfolio.png"],
-              link: "https://aldessscratch.github.io/website-2/",
-              badges: ["html", "tailwind"],
-              github: "https://github.com/AldessScratch/website-2"
-            },
-            {
-              title: "Lite Client Website",
-              description: "Modern landing page for a Minecraft Client that never came out",
-              images: ["/liteclient/liteclient.png", "/liteclient/liteclient2.png", "/liteclient/liteclient3.png", "/liteclient/liteclient4.png", "/liteclient/liteclient5.png"],
-              link: "/liteclient/index.html",
-              badges: ["html", "css", "js"]
-            },
-            {
-              title: "Aetherium Launcher Frontend",
-              description: "Very Clean frontend for Aetherium Client Launcher.",
-              images: ["/Aetherium-Launcher/launcher.png", "/Aetherium-Launcher/launcher2.png", "/Aetherium-Launcher/launcher3.png"],
-              link: "/Aetherium-Launcher/index.html",
-              badges: ["html", "css", "js"]
-            },
-            {
-              title: "Aetherium Website",
-              description: "A dark-themed/modern website for a Minecraft Client called Aetherium",
-              images: ["/Aetherium-Website/aetherium.png"],
-              link: "/Aetherium-Website/index.html",
-              badges: ["html", "css", "js"]
-            },
-            {
-              title: "Snowy-bg",
-              description: "Website to use with Lively Wallpaper so we can have a nice background on the classroom's computer but the teacher didn't like it :(",
-              images: ["/Snowy-bg/snowybg.png"],
-              badges: ["html", "css"]
-            },
-            {
-              title: "Portfolio v1",
-              description: "My first portfolio",
-              images: ["/website/portfolio.png"],
-              link: "https://aldessscratch.github.io/website",
-              badges: ["html", "css"],
-              github: "https://github.com/AldessScratch/website"
-            },
-            {
-              title: "Soar Client Website",
-              description: "A slight redsign of the Soar Client Website",
-              images: ["/Soar-Client-Website/soar.png", "/Soar-Client-Website/soar2.png"],
-              link: "https://soarclient.netlify.app",
-              badges: ["html", "css", "js"],
-              github: "https://github.com/AldessScratch/Soar-Client-Website"
-            },
-            {
-              title: "GetTechno / Fluix",
-              description: "Website with games and frontend for Ultraviolet Proxy, first website that I made.",
-              images: ["/fluix/fluix2.png", "/fluix/fluix.png", "/fluix/gettechno.png"],
-              badges: ["html", "css", "js"]
-            }
-          ]}
-            />
           </div>
-        </div>
-        <div className="w-full flex justify-center items-center h-28 text-gray-600 dark:text-gray-400">
-          &copy; 2025 @ aldesssc. All rights reserved.
+          <div className="xl:w-2/4 lg:mt-0 lg:w-2/3 w-full">
+            <div className="w-full grid grid-cols-1 gap-2 lg:grid-cols-1">
+              <div className="h-[400px] bg-gray-300 dark:bg-gray-700 rounded-2xl animate-pulse mb-4 "></div>
+            </div>
+            <div className="h-48 bg-gray-200 dark:bg-gray-800 rounded-2xl animate-pulse my-4 blbg"></div>
+            <div className="h-100 bg-gray-200 dark:bg-gray-800 rounded-2xl animate-pulse my-4 blbg"></div>
+          </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+export default function Home() {
+  const [data, setData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const [fade, setFade] = useState(true);
+  const [projects, setProjects] = useState<any[]>([]);
+
+  useEffect(() => {
+    fetch('/projects.json')
+      .then(res => res.json())
+      .then(json => setProjects(json));
+  }, []);
+  useEffect(() => {
+    fetch('/data.json')
+      .then(res => res.json())
+      .then(json => {
+        setData(json);
+        setFade(false); // Start skeleton fade out
+        setTimeout(() => setLoading(false), 700); // Remove skeleton after fade
+      });
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash) {
+      window.history.replaceState(
+        null,
+        document.title,
+        window.location.pathname + window.location.search
+      );
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
+  return (
+    <div className="relative min-h-screen flex flex-col bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-800 ease-in-out justify-center items-center">
+      <Navbar />
+      <main className="flex-1 w-full relative">
+        {loading && <Skeleton visible={fade} />}
+        {!loading && data && (
+          <div
+            className={`
+              w-full min-h-screen flex justify-center items-center flex-col
+              transition-opacity duration-700 opacity-100 z-10
+            `}
+          >
+            <div className="container mt-24 px-6 lg:mt-0 lg:px-0 z-10" id='home'>
+              <div className="flex flex-col justify-center lg:flex-row gap-8">
+                <div className="lg:w-1/4 w-full lg:mb-10 left-0 h-fit lg:sticky lg:top-28">
+                  <ProfileCard
+                    description={data.profile.description}
+                    badges={data.profile.badges}
+                  />
+                </div>
+                <div className="xl:w-2/4 lg:mt-28 lg:w-2/3 w-full">
+                  <div className="w-full grid grid-cols-1 gap-2 lg:grid-cols-1">
+                    <ImageCard
+                      title="Low Poly BMW M4"
+                      description="A low poly car that I made in Blender"
+                      images={data.images}
+                    />
+                  </div>
+                  <SkillCard badges={data.skills} />
+                  <ProjectCardSection projects={projects} />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </main>
+      <footer className="w-full flex justify-center items-center h-28 text-gray-600 dark:text-gray-400 z-10">
+        &copy; 2025 @ aldesssc. All rights reserved.
+      </footer>
       <div className="fixed -top-40 -left-40 w-80 h-80 bg-purple-300 dark:bg-purple-900 rounded-full opacity-30 blur-3xl"></div>
       <div className="fixed top-1/2 -right-40 w-80 h-80 bg-blue-300 dark:bg-blue-900 rounded-full opacity-30 blur-3xl"></div>
       <div className="fixed -bottom-40 left-1/3 w-80 h-80 bg-pink-300 dark:bg-pink-900 rounded-full opacity-30 blur-3xl"></div>

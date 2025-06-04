@@ -10,8 +10,8 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "Aldess",
-  description: "Aldess'portfolio :)",
+  title: "Portfolio - Aldess",
+  description: "Hello, I'm Aldess :D",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

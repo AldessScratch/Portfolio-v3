@@ -1,0 +1,15 @@
+{
+  "profile": {
+    "description": "Hello, I'm aldess, a french teenager with passion for technology and coding. I started learning web development to make a website to access restricted websites on the school tablet. Since then, I've learnt a lot and made a lot of websites. I'm now learning frameworks such as Next.js which this website is made with to create bigger projects.",
+    "badges": [
+      { "badge": "github", "link": "https://github.com/AldessScratch" },
+      { "badge": "discord", "link": "https://discord.com/users/1001220536619249665" }
+    ]
+  },
+  "images": [
+    { "url": "/bmw.png", "alt": "BMW Car back" },
+    { "url": "/bmwfront.png", "alt": "BMW Car front" },
+    { "url": "/blenderbmw.png", "alt": "BMW Car in Blender" }
+  ],
+  "skills": ["html", "css", "js", "react", "next", "tailwind", "blender", "git", "github", "vercel", "vscode", "figma"]
+}

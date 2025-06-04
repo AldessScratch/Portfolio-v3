@@ -1,0 +1,134 @@
+[
+    {
+        "title": "Current Portfolio",
+        "description": "Modern portflio website made with Next.js",
+        "images": [
+            "/Website-v3/portfolio.png"
+        ],
+        "badges": [
+            "next",
+            "react",
+            "tailwind"
+        ],
+        "github": "https://github.com/AldessScratch/Website-v3"
+    },
+    {
+        "title": "Flace",
+        "description": "A website I made with a friend to learn with flashcards",
+        "images": [
+            "/Flace/flacehome.png"
+        ],
+        "link": "https://flace.netlify.app",
+        "badges": [
+            "html",
+            "css",
+            "js"
+        ],
+        "github": "https://github.com/AldessScratch/Flace"
+    },
+    {
+        "title": "Portfolio v2",
+        "description": "Modern portfolio which was my first time with Tailwind CSS",
+        "images": [
+            "/website-2/portfolio.png"
+        ],
+        "link": "https://aldessscratch.github.io/website-2/",
+        "badges": [
+            "html",
+            "tailwind"
+        ],
+        "github": "https://github.com/AldessScratch/website-2"
+    },
+    {
+        "title": "Lite Client Website",
+        "description": "Modern landing page for a Minecraft Client that never came out",
+        "images": [
+            "/liteclient/liteclient.png"
+        ],
+        "link": "/liteclient/index.html",
+        "badges": [
+            "html",
+            "css",
+            "js"
+        ]
+    },
+    {
+        "title": "Aetherium Launcher Frontend",
+        "description": "Very Clean frontend for Aetherium Client Launcher.",
+        "images": [
+            "/Aetherium-Launcher/launcher.png"
+        ],
+        "link": "/Aetherium-Launcher/index.html",
+        "badges": [
+            "html",
+            "css",
+            "js"
+        ]
+    },
+    {
+        "title": "Aetherium Website",
+        "description": "A dark-themed/modern website for a Minecraft Client called Aetherium",
+        "images": [
+            "/Aetherium-Website/aetherium.png"
+        ],
+        "link": "/Aetherium-Website/index.html",
+        "badges": [
+            "html",
+            "css",
+            "js"
+        ]
+    },
+    {
+        "title": "Snowy-bg",
+        "description": "Website to use with Lively Wallpaper so we can have a nice background on the classroom's computer but the teacher didn't like it :(",
+        "images": [
+            "/Snowy-bg/snowybg.png"
+        ],
+        "badges": [
+            "html",
+            "css"
+        ]
+    },
+    {
+        "title": "Portfolio v1",
+        "description": "My first portfolio",
+        "images": [
+            "/website/portfolio.png"
+        ],
+        "link": "https://aldessscratch.github.io/website",
+        "badges": [
+            "html",
+            "css"
+        ],
+        "github": "https://github.com/AldessScratch/website"
+    },
+    {
+        "title": "Soar Client Website",
+        "description": "A slight redsign of the Soar Client Website",
+        "images": [
+            "/Soar-Client-Website/soar.png",
+            "/Soar-Client-Website/soar2.png"
+        ],
+        "link": "https://soarclient.netlify.app",
+        "badges": [
+            "html",
+            "css",
+            "js"
+        ],
+        "github": "https://github.com/AldessScratch/Soar-Client-Website"
+    },
+    {
+        "title": "GetTechno / Fluix",
+        "description": "Website with games and frontend for Ultraviolet Proxy, first website that I made.",
+        "images": [
+            "/fluix/fluix2.png",
+            "/fluix/fluix.png",
+            "/fluix/gettechno.png"
+        ],
+        "badges": [
+            "html",
+            "css",
+            "js"
+        ]
+    }
+]
