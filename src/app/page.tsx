@@ -6,6 +6,20 @@ import ProfileCard from '@/components/profilecard';
 import ImageCard from '@/components/imagecard';
 import ProjectCardSection from '@/components/projectcardsection';
 import SkillCard from '@/components/skillcard';
+import type { ProjectCardProps } from '@/components/projectcard'; 
+import type { BadgeKey } from '@/components/badge'; 
+import type { ProfileCardBadge } from '@/components/profilecard'; 
+
+interface Profile {
+  description: string;
+  badges: ProfileCardBadge[];
+}
+
+interface Data {
+  profile: Profile;
+  images: { url: string; alt?: string }[]; 
+  skills: BadgeKey[];
+}
 
 function Skeleton({ visible }: { visible: boolean }) {
   return (
@@ -43,10 +57,10 @@ function Skeleton({ visible }: { visible: boolean }) {
 }
 
 export default function Home() {
-  const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [fade, setFade] = useState(true);
-  const [projects, setProjects] = useState<any[]>([]);
+  const [data, setData] = useState<Data | null>(null);
+  const [projects, setProjects] = useState<ProjectCardProps[]>([]);
 
   useEffect(() => {
     fetch('/projects.json')

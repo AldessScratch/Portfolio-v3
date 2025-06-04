@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Badge, { BadgeKey } from './badge';
 
-interface ProfileCardBadge {
+export interface ProfileCardBadge {
   badge: BadgeKey;
   link?: string;
 }

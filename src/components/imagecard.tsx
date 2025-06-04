@@ -5,10 +5,10 @@ import Viewer from "viewerjs";
 import "viewerjs/dist/viewer.css";
 import Image from 'next/image';
 
-interface ImageCardProps {
-  images: { url: string; alt?: string }[];
+export interface ImageCardProps {
   title: string;
   description: string;
+  images: { url: string; alt?: string }[];
 }
 
 export default function ImageCard(props: ImageCardProps) {

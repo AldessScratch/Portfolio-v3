@@ -8,7 +8,7 @@ import "viewerjs/dist/viewer.css";
 import Image from 'next/image';
 
 
-interface ProjectCardBadge {
+export interface ProjectCardBadge {
   badge: BadgeKey;
   link?: string;
 }
