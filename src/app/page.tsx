@@ -43,12 +43,12 @@ function Skeleton({ visible }: { visible: boolean }) {
               <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded w-3/4 my-0.5"></div>
             </div>
           </div>
-          <div className="xl:w-2/4 lg:mt-0 lg:w-2/3 w-full">
+          <div className="xl:w-2/4 lg:mt-28 lg:w-2/3 w-full">
             <div className="w-full grid grid-cols-1 gap-2 lg:grid-cols-1">
               <div className="h-[400px] bg-gray-300 dark:bg-gray-700 rounded-2xl animate-pulse mb-4 "></div>
             </div>
-            <div className="h-48 bg-gray-200 dark:bg-gray-800 rounded-2xl animate-pulse my-4 blbg"></div>
-            <div className="h-100 bg-gray-200 dark:bg-gray-800 rounded-2xl animate-pulse my-4 blbg"></div>
+            <div className="h-48 w-full bg-gray-200 dark:bg-gray-800 rounded-2xl animate-pulse my-4 blbg"></div>
+            <div className="h-150 w-full bg-gray-200 dark:bg-gray-800 rounded-2xl animate-pulse my-4 blbg"></div>
           </div>
         </div>
       </div>

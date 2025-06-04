@@ -34,7 +34,7 @@ export default function ProjectCardSection({ projects }: ProjectCardSectionProps
         </div>
         <p className='font-light text-gray-600 dark:text-gray-400 my-2'>Websites and applications I have built</p>
       </div>
-      <Suspense fallback={<div className="min-h-100 flex justify-center items-center"><span className="loading loading-ring loading-xl"></span></div>}>
+      <Suspense fallback={<div className="min-h-150 flex justify-center items-start pt-24"><span className="loading loading-ring loading-xl"></span></div>}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-8">
           {projects.slice(0, visibleCount).map((project, idx) => (
             <motion.div
@@ -48,7 +48,7 @@ export default function ProjectCardSection({ projects }: ProjectCardSectionProps
           ))}
         </div>
         {visibleCount < projects.length && (
-          <div ref={loaderRef} className="flex justify-center py-4">
+          <div ref={loaderRef} className="flex justify-center">
             <span className="loading loading-ring loading-lg"></span>
           </div>
         )}
