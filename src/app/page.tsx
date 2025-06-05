@@ -89,7 +89,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-800 ease-in-out justify-center items-center">
+    <div className="relative min-h-screen flex flex-col background-colors justify-center items-center">
       <Navbar />
       <main className="flex-1 w-full relative">
         {loading && <Skeleton visible={fade} />}
