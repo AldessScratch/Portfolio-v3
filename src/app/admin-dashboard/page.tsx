@@ -4,6 +4,45 @@ import { IconLogout2, IconHome, IconChartLine, IconEdit } from '@tabler/icons-re
 export default function AdminDashboard() {
     return (
         <div className="relative w-full h-screen flex items-center justify-center background-colors">
+             <div className="ease-in-out py-1 bg-transparent fixed transition-all duration-200 z-100 flex justify-center items-center dark:text-white dark:border-gray-700 rounded-full top-6 max-h-fit w-12 blbg">
+                  <div className="flex justify-center items-center flex-col">
+                    <ul className="menu menu-vertical px-1 text-base p-0 m-0">
+                        <li>
+                          <a
+                            href={`#`}
+                            className="btn btn-ghost btn-circle h-7 w-7 m-1 text-blue-500"
+                          >
+                            <IconHome />
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href={`#`}
+                            className="btn btn-ghost btn-circle h-7 w-7 m-1"
+                          >
+                            <IconChartLine />
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href={`#`}
+                            className="btn btn-ghost btn-circle h-7 w-7 m-1"
+                          >
+                            <IconEdit />
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href={`#`}
+                            className="btn btn-ghost btn-circle h-7 w-7 m-1"
+                          >
+                            <IconLogout2 />
+                          </a>
+                        </li>
+                    </ul>
+                    <ThemeToggle />
+                  </div>
+                </div>
             <aside className="fixed left-0 top-0 m-8 flex flex-col w-64 h-[calc(100%-4rem)] rounded-2xl blbg z-50">
                 {/* Logo & Title */}
                 <div className="flex items-center gap-3 mt-10 mb-8 px-8">
@@ -39,7 +78,7 @@ export default function AdminDashboard() {
                         <ThemeToggle />
                         <span className="text-sm text-black dark:text-white">Switch Theme</span>
                     </div>
-                    <button className="flex items-center gap-2 w-full justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-purple-400/70 to-pink-400/70 dark:from-purple-700/70 dark:to-pink-700/70 text-white font-semibold shadow hover:scale-105 transition-transform">
+                    <button className="flex items-center gap-2 w-full justify-center px-4 py-2 rounded-lg bg-black text-white font-semibold shadow hover:scale-105 transition-transform">
                         <IconLogout2 /> Sign out
                     </button>
                 </div>
