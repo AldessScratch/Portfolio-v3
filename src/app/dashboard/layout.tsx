@@ -1,8 +1,9 @@
 'use client'
 
-import { IconLogout2, IconChartLine, IconEdit } from '@tabler/icons-react';
+import { IconChartLine, IconEdit } from '@tabler/icons-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
 
 export default function AdminDashboardLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
@@ -23,7 +24,7 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
                         <Link
                             href="/admin-dashboard/analytics"
                             className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all ${
-                                pathname === '/admin-dashboard/analytics'
+                                pathname === '/dashboard/analytics'
                                     ? 'bg-blue-500 text-white'
                                     : 'text-black dark:text-white'
                             }`}
@@ -35,7 +36,7 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
                         <Link
                             href="/admin-dashboard/edit"
                             className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all ${
-                                pathname === '/admin-dashboard/edit'
+                                pathname === '/dashboard/edit'
                                     ? 'bg-blue-500 text-white'
                                     : 'text-black dark:text-white'
                             }`}
@@ -43,12 +44,17 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
                             <IconEdit className="text-xl" /> Edit Page
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                            href="/signout"
+                            className="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all"
+                        >
+                            <IconEdit className="text-xl" /> Edit Page
+                        </Link>
+                    </li>
                 </ul>
                 <div className="flex-1" />
                 <div className="flex flex-col gap-4 items-center mb-8 px-8">
-                    <button className="flex items-center gap-2 w-full justify-center px-4 py-2 rounded-lg font-semibold  transition-transform btn btn-soft">
-                        <IconLogout2 /> Sign out
-                    </button>
                 </div>
             </aside>
             {/* Blurred Colorful Backgrounds */}

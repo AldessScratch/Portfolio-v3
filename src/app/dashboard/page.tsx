@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation';
 
 export default function AdminDashboard() {
-    redirect('/admin-dashboard/analytics');
+    redirect('/dashboard/analytics');
     return null;
 }
