@@ -8,8 +8,9 @@ export interface ProfileCardBadge {
   link?: string;
 }
 
-interface ProfileCardProps {
+export interface ProfileCardProps {
   description: string;
+  subtext: string;
   badges?: ProfileCardBadge[];
 }
 
@@ -27,8 +28,8 @@ export default function ProfileCard(props: ProfileCardProps) {
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title text-3xl">Aldess</h2>
-                <h2 className="card-title text-xl text-gray-600 dark:text-gray-400 font-light">Full Stack developper (soon)</h2>
-                <p className='my-5'>{props.description || "Missing Description"}</p>
+                <h2 className="card-title text-xl text-gray-600 dark:text-gray-400 font-light">{props.subtext || "Missing Sub Text"}</h2>
+                <p className='my-5 w-[95%]'>{props.description || "Missing Description"}</p>
                 <div className="w-full m-3">
                     {props.badges && props.badges.map((b, i) => (
                         <Badge key={i} badge={b.badge} link={b.link} />

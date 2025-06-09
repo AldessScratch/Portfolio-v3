@@ -23,5 +23,5 @@ body {
 }
 
 .background-colors {
-  @apply bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-800 ease-in-out
+  @apply bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-800 ease-in-out dark:text-white
 }

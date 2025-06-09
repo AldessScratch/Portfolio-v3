@@ -72,18 +72,23 @@ export default function AdminAnalyticsPage() {
     return (
 
         <div className="w-full flex justify-start items-start flex-col">
-            <div className="w-full flex justify-start items-start flex-col">
-                <select
-                    value={period}
-                    onChange={e => setPeriod(e.target.value)}
-                    className="select select-ghost text-lg my-5"
+            <div className="w-full flex md:justify-start md:items-start items-center justify-center flex-col">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 1 * 0.08 }}
                 >
-                    {PERIODS.map(p => (
-                        <option key={p.value} value={p.value}>{p.label}</option>
-                    ))}
-                </select>
-
-                <div className='w-full flex justify-start items-start flex-wrap gap-5'>
+                    <select
+                        value={period}
+                        onChange={e => setPeriod(e.target.value)}
+                        className="select select-ghost text-lg my-5"
+                    >
+                        {PERIODS.map(p => (
+                            <option key={p.value} value={p.value}>{p.label}</option>
+                        ))}
+                    </select>
+                </motion.div>
+                <div className='w-full flex md:justify-start md:items-start items-center justify-center flex-wrap gap-5'>
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}

@@ -70,7 +70,6 @@ export async function GET(req: NextRequest) {
             activeData
         };
         
-        console.log(combinedData);
         return NextResponse.json(combinedData);
     } catch (error) {
         console.error('API Error:', error);

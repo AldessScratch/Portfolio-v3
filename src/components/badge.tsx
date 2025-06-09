@@ -14,6 +14,13 @@ import {
   IconBrandVercel,
   IconBrandNodejs,
   IconBrandFigma,
+  IconBrandYoutube,
+  IconBrandTiktok,
+  IconBrandMatrix,
+  IconBrandLinkedin,
+  IconBrandX,
+  IconBrandReddit,
+  IconBrandInstagram,
   IconBrandVscode
 } from '@tabler/icons-react';
 import type { IconProps } from '@tabler/icons-react';
@@ -32,6 +39,13 @@ export type BadgeKey =
   | "vercel"
   | "vscode"
   | "figma"
+  | "youtube"
+  | "tiktok"
+  | "matrix"
+  | "linkedin"
+  | "x"
+  | "reddit"
+  | "instagram"
   | "git";
 
 
@@ -49,6 +63,13 @@ const badgeMap: Record<BadgeKey, { icon: React.ComponentType<IconProps>; text: s
   vercel: { icon: IconBrandVercel, text: "Vercel" },
   vscode: { icon: IconBrandVscode, text: "VS Code" },
   figma: { icon: IconBrandFigma, text: "Figma" },
+  youtube: { icon: IconBrandYoutube, text: "Youtube" },
+  tiktok: { icon: IconBrandTiktok, text: "Tiktok" },
+  matrix: { icon: IconBrandMatrix, text: "Matrix" },
+  linkedin: { icon: IconBrandLinkedin, text: "LinkedIn" },
+  x: { icon: IconBrandX, text: "X" },
+  reddit: { icon: IconBrandReddit, text: "Reddit" },
+  instagram: { icon: IconBrandInstagram, text: "Instagram" },
   git: { icon: IconBrandGit, text: "Git" }
 };
 

@@ -5,8 +5,17 @@ import { IconLogout2 } from '@tabler/icons-react'
 
 const SignOutButton = () => {
     return (
-        <button className="flex items-center gap-2 w-full justify-center px-4 py-2 rounded-lg font-semibold  transition-transform btn btn-soft" onClick={() => signOut({ callbackUrl: "/" })} type="button">
-            <IconLogout2 /> Sign out
+        <button 
+            className={`
+                flex items-center justify-center font-semibold transition-transform
+                p-2 rounded-full
+                md:gap-2 md:px-4 md:py-2 md:rounded-lg
+                btn btn-rounded btn-ghost md:btn-soft
+            `}
+            onClick={() => signOut({ callbackUrl: "/" })}
+            type="button"
+        >
+            <IconLogout2 /> <span className="md:flex hidden">Sign out</span>
         </button>
 
     );

@@ -8,15 +8,10 @@ import ProjectCardSection from '@/components/projectcardsection';
 import SkillCard from '@/components/skillcard';
 import type { ProjectCardProps } from '@/components/projectcard';
 import type { BadgeKey } from '@/components/badge';
-import type { ProfileCardBadge } from '@/components/profilecard';
-
-interface Profile {
-  description: string;
-  badges: ProfileCardBadge[];
-}
+import type { ProfileCardProps } from '@/components/profilecard';
 
 interface Data {
-  profile: Profile;
+  profile: ProfileCardProps;
   images: { url: string; alt?: string }[];
   skills: BadgeKey[];
 }
@@ -63,12 +58,12 @@ export default function Home() {
   const [projects, setProjects] = useState<ProjectCardProps[]>([]);
 
   useEffect(() => {
-    fetch('/projects.json')
+    fetch('/api/projects')
       .then(res => res.json())
       .then(json => setProjects(json));
   }, []);
   useEffect(() => {
-    fetch('/data.json')
+    fetch('/api/data')
       .then(res => res.json())
       .then(json => {
         setData(json);
@@ -104,6 +99,7 @@ export default function Home() {
               <div className="flex flex-col justify-center lg:flex-row gap-8">
                 <div className="lg:w-1/4 w-full lg:mb-10 left-0 h-fit lg:sticky lg:top-28">
                   <ProfileCard
+                    subtext={data.profile.subtext}
                     description={data.profile.description}
                     badges={data.profile.badges}
                   />
