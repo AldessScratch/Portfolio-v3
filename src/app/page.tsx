@@ -9,7 +9,6 @@ import SkillCard from '@/components/skillcard';
 import type { ProjectCardProps } from '@/components/projectcard';
 import type { BadgeKey } from '@/components/badge';
 import type { ProfileCardBadge } from '@/components/profilecard';
-import { motion } from 'framer-motion';
 
 interface Profile {
   description: string;
