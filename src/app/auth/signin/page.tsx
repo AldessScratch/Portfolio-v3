@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
-import { options } from "../api/auth/[...nextauth]/options";
+import { options } from "../../api/auth/[...nextauth]/options";
 
 import SignInButton from "@/components/dashboard/signinbutton";
 
@@ -11,10 +11,10 @@ const SignInPage = async () => {
     redirect("/dashboard");
   } else {
     return (
-      <div>
-        <h1>SignInPage</h1>
-
-        <SignInButton />
+      <div className="h-[100vh] w-full flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col blbg rounded-2xl p-10">
+          <SignInButton />
+        </div>
       </div>
     );
   }

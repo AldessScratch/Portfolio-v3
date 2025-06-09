@@ -17,16 +17,19 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={outfit.className} suppressHydrationWarning>
-      <body>
+      <body className='background-colors'>
         <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
           {children}
+          <div className="fixed -top-40 -left-40 w-80 h-80 bg-purple-300 dark:bg-purple-900 rounded-full opacity-30 blur-3xl"></div>
+          <div className="fixed top-1/2 -right-40 w-80 h-80 bg-blue-300 dark:bg-blue-900 rounded-full opacity-30 blur-3xl"></div>
+          <div className="fixed -bottom-40 left-1/3 w-80 h-80 bg-pink-300 dark:bg-pink-900 rounded-full opacity-30 blur-3xl"></div>
           <Script
-          async
-          defer
-          src="/stats/script.js"
-          data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
-        />
-       </ThemeProvider>
+            async
+            defer
+            src="/stats/script.js"
+            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+          />
+        </ThemeProvider>
       </body>
     </html>
   )

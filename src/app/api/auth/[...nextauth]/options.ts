@@ -10,7 +10,16 @@ export const options: AuthOptions = {
         })
     ],
     pages: {
-        signIn: "/signin",
-        signOut: "/signout"
+        signIn: "/auth/signin",
+        error: "/auth/error"
+    },
+    callbacks: {
+        async signIn({ profile }) {
+            if ( profile?.email === "aldess.sc@gmail.com") {
+                return true;
+            }
+
+            return false;
+        }
     }
 };

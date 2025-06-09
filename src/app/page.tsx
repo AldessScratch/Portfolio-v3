@@ -6,9 +6,10 @@ import ProfileCard from '@/components/profilecard';
 import ImageCard from '@/components/imagecard';
 import ProjectCardSection from '@/components/projectcardsection';
 import SkillCard from '@/components/skillcard';
-import type { ProjectCardProps } from '@/components/projectcard'; 
-import type { BadgeKey } from '@/components/badge'; 
-import type { ProfileCardBadge } from '@/components/profilecard'; 
+import type { ProjectCardProps } from '@/components/projectcard';
+import type { BadgeKey } from '@/components/badge';
+import type { ProfileCardBadge } from '@/components/profilecard';
+import { motion } from 'framer-motion';
 
 interface Profile {
   description: string;
@@ -17,7 +18,7 @@ interface Profile {
 
 interface Data {
   profile: Profile;
-  images: { url: string; alt?: string }[]; 
+  images: { url: string; alt?: string }[];
   skills: BadgeKey[];
 }
 
@@ -89,7 +90,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col background-colors justify-center items-center">
+    <div className="relative min-h-screen flex flex-col justify-center items-center">
       <Navbar />
       <main className="flex-1 w-full relative">
         {loading && <Skeleton visible={fade} />}
@@ -121,15 +122,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <footer className="w-full flex justify-center items-center h-28 text-gray-600 dark:text-gray-400 z-10">
+              &copy; 2025 @ aldesssc. All rights reserved.
+            </footer>
           </div>
         )}
       </main>
-      <footer className="w-full flex justify-center items-center h-28 text-gray-600 dark:text-gray-400 z-10">
-        &copy; 2025 @ aldesssc. All rights reserved.
-      </footer>
-      <div className="fixed -top-40 -left-40 w-80 h-80 bg-purple-300 dark:bg-purple-900 rounded-full opacity-30 blur-3xl"></div>
-      <div className="fixed top-1/2 -right-40 w-80 h-80 bg-blue-300 dark:bg-blue-900 rounded-full opacity-30 blur-3xl"></div>
-      <div className="fixed -bottom-40 left-1/3 w-80 h-80 bg-pink-300 dark:bg-pink-900 rounded-full opacity-30 blur-3xl"></div>
+
     </div>
   );
 }
