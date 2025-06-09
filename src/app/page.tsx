@@ -118,7 +118,7 @@ export default function Home() {
               </div>
             </div>
             <footer className="w-full flex justify-center items-center h-28 text-gray-600 dark:text-gray-400 z-10">
-              &copy; 2025 @ aldesssc. All rights reserved.
+              &copy; 2025 aldesssc. All rights reserved.
             </footer>
           </div>
         )}
