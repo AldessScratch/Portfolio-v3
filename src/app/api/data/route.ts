@@ -10,7 +10,7 @@ export async function GET() {
       'utf-8'
     );
     return NextResponse.json(JSON.parse(data));
-  } catch (error) {
+  } catch { // void error
     return NextResponse.json(
       { error: 'Failed to fetch data' },
       { status: 500 }
@@ -26,7 +26,7 @@ export async function PUT(request: Request) {
       JSON.stringify(newData, null, 2)
     );
     return NextResponse.json({ message: 'Data updated successfully' });
-  } catch (error) {
+  } catch { // void error
     return NextResponse.json(
       { error: 'Failed to update data' },
       { status: 500 }

@@ -141,10 +141,13 @@ export default function AdminEditPage() {
                                     ) : null
                                 )}
                             </fieldset>
-                            <button className='btn btn-soft' onClick={handleUpdate}>Update</button>
-                            {success && (
-                                <div className="text-green-500 text-sm my-2 font-normal">Updated successfully!</div>
-                            )}
+                            <div className="flex">
+                                <button className='btn btn-soft' onClick={handleUpdate}>Update</button>
+                                {success && (
+                                    <div className="text-green-500 text-sm my-2 font-normal m-4">Updated successfully!</div>
+                                )}
+                            </div>
+
                         </div>
                     </div>
                 </motion.div>
