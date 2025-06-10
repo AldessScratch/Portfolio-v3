@@ -17,18 +17,3 @@ export async function GET() {
   }
 }
 
-export async function PUT(request: Request) {
-  try {
-    const newData = await request.json();
-    await fs.writeFile(
-      path.join(process.cwd(), 'src', 'data', 'projects.json'),
-      JSON.stringify(newData, null, 2)
-    );
-    return NextResponse.json({ message: 'Data updated successfully' });
-  } catch { // void error
-    return NextResponse.json(
-      { error: 'Failed to update data' },
-      { status: 500 }
-    );
-  }
-}

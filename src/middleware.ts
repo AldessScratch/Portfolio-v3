@@ -8,8 +8,3 @@ export function middleware(request: NextRequest) {
   request.headers.set("X-XSS-Protection", "1; mode=block");
   return NextResponse.next();
 }
-export const config = { 
-    matcher: [
-        "/dashboard"
-    ] 
-};
