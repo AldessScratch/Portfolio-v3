@@ -43,7 +43,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 
   return (
     <div ref={galleryRef} className="card rounded-2xl border-1 backdrop-blur-lg shadow-lg text-black bg-transparent dark:text-white dark:border-gray-700 border-transparent h-[430px] sm:h-[390px] transform transition-all duration-300 hover:shadow-2xl dark:hover:border-white hover:scale-103">
-      <figure className="relative w-full h-[150px] min-h-[150px] overflow-hidden shadow-sm">
+      <figure className="relative w-full h-[150px] min-h-[150px] overflow-hidden shadow-sm cursor-pointer">
         {images.map((img, idx) => (
           <Image
             key={img + idx}

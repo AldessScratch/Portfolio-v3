@@ -21,7 +21,9 @@ import {
   IconBrandX,
   IconBrandReddit,
   IconBrandInstagram,
-  IconBrandVscode
+  IconBrandVscode,
+  IconBrandTabler,
+  IconBrandSupabase
 } from '@tabler/icons-react';
 import type { IconProps } from '@tabler/icons-react';
 
@@ -46,7 +48,9 @@ export type BadgeKey =
   | "x"
   | "reddit"
   | "instagram"
-  | "git";
+  | "git"
+  | "tabler"
+  | "supabase";
 
 
 const badgeMap: Record<BadgeKey, { icon: React.ComponentType<IconProps>; text: string }> = {
@@ -70,7 +74,9 @@ const badgeMap: Record<BadgeKey, { icon: React.ComponentType<IconProps>; text: s
   x: { icon: IconBrandX, text: "X" },
   reddit: { icon: IconBrandReddit, text: "Reddit" },
   instagram: { icon: IconBrandInstagram, text: "Instagram" },
-  git: { icon: IconBrandGit, text: "Git" }
+  git: { icon: IconBrandGit, text: "Git" },
+  tabler: { icon: IconBrandTabler, text: "Tabler Icons" },
+  supabase: { icon: IconBrandSupabase, text: "Supabase" }
 };
 
 interface BadgeProps {
