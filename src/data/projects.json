@@ -1,5 +1,17 @@
 [
     {
+        "title": "Entract.me",
+        "description": "A WIP productivity app that helps you achieve your goals distraction-less. We combine focused work sessions with gamification to keep you consistent and motivated.",
+        "images": [
+            "/entractme.png"
+        ],
+        "badges": [
+            "next",
+            "supabase"
+        ],
+        "discord": "https://entract.me/discord"
+    },
+    {
         "title": "Current Portfolio",
         "description": "Modern portflio website made with Next.js",
         "images": [

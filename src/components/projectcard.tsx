@@ -1,7 +1,7 @@
 'use client'
 
 import Badge, { BadgeKey } from './badge';
-import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
+import { IconBrandDiscord, IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
 import { useEffect, useRef } from "react";
 import Viewer from "viewerjs";
 import "viewerjs/dist/viewer.css";
@@ -22,6 +22,7 @@ export interface ProjectCardProps {
   badges: (ProjectCardBadge | BadgeKey)[];
   link?: string;
   github?: string;
+  discord?: string;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -78,6 +79,16 @@ export default function ProjectCard(props: ProjectCardProps) {
                 className="btn btn-circle border-1 dark:border-gray-600 border-gray-300 dark:text-white text-black dark:hover:invert mx-1"
               >
                 <IconBrandGithub className='h-4 w-4' />
+              </a>
+            )}
+            {props.discord && (
+              <a
+                href={props.discord}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-circle border-1 dark:border-gray-600 border-gray-300 dark:text-white text-black dark:hover:invert mx-1"
+              >
+                <IconBrandDiscord className='h-4 w-4' />
               </a>
             )}
           </div>
