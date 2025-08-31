@@ -3,6 +3,14 @@ import type { NextConfig } from "next";
 // next.config.js
 const nextConfig = {
   // your existing config
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'entract.me',
+      },
+    ],
+  },
   async rewrites() {
     return [
       {

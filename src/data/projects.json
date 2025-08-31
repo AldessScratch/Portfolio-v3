@@ -1,5 +1,20 @@
 [
     {
+        "title": "Entract",
+        "description": "A gamified focus-first todo app that helps beat procrastination and build discipline",
+        "images": [
+            "https://entract.me/opengraph-image.png",
+            "/entract/landing.png",
+            "/entract/dashboard.png"
+        ],
+        "badges": [
+            "next",
+            "tailwind",
+            "supabase",
+            "react"
+        ]
+    },
+    {
         "title": "Current Portfolio",
         "description": "Modern portflio website made with Next.js",
         "images": [
