@@ -12,7 +12,8 @@
             "tailwind",
             "supabase",
             "react"
-        ]
+        ],
+        "link": "https://entract.me"
     },
     {
         "title": "Current Portfolio",
