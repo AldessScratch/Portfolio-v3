@@ -7,7 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'entract.me',
+        hostname: 'www.entract.me',
       },
     ],
   },
